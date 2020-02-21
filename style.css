@@ -1,3 +1,11 @@
+html{
+    height: 100%;
+}
+
+body{
+    padding: 2% 5%;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -6,3 +14,27 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+._top_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+._nav_bar {
+    list-style: none;
+    height: 30px;
+}
+
+._nav_bar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+._nav_bar li a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width:){}
+
+@media only screen and (max-width:){} 

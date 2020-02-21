@@ -1,9 +1,10 @@
-html{
-    height: 100%;
+*{
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
 }
-
-body{
-    padding: 2% 5%;
+html {
+    height: 100%;
 }
 
 .attribution {
@@ -15,26 +16,35 @@ body{
     color: hsl(228, 45%, 44%);
 }
 
-._top_section{
+._top_section {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+._top_section_logo{
+    cursor: pointer;
+    margin-right: auto;
 }
 
 ._nav_bar {
     list-style: none;
-    height: 30px;
+    height: auto;
+    margin-left: auto;
 }
 
 ._nav_bar li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
+
 }
 
 ._nav_bar li a {
     text-decoration: none;
+    font-size: 10px;
 }
 
-@media only screen and (min-width:){}
+@media only screen and (min-width:) {}
 
-@media only screen and (max-width:){} 
+@media only screen and (max-width:) {}

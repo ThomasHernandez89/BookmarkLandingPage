@@ -1,10 +1,17 @@
-*{
+* {
     font-family: 'Rubik';
     margin: 0;
     padding: 0;
 }
+
 html {
     height: 100%;
+}
+
+button {
+    padding: 10% 45%;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); 
 }
 
 .attribution {
@@ -20,10 +27,10 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 5%;
+    padding: 3% 10%;
 }
 
-._top_section_logo{
+._top_section_logo {
     cursor: pointer;
     margin-right: auto;
 }
@@ -43,8 +50,33 @@ html {
 ._nav_bar li a {
     text-decoration: none;
     font-size: 10px;
+    color: black;
 }
 
-@media only screen and (min-width:) {}
+._nav_bar li a:hover {
+    color: hsl(229, 8%, 60%);
+    transition: 0.3s;
+}
 
-@media only screen and (max-width:) {}
+._nav_bar_bttn:hover {
+    background-color: hsl(0, 94%, 66%);
+    transition: 0.9s;
+    border-color: transparent;
+    color: white;
+}
+
+@media only screen and (min-width:600px) {
+
+    ._burger_menu {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    ._nav_bar,
+    ._nav_bar_bttn {
+        display: none;
+    }
+}

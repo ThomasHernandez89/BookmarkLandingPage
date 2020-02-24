@@ -16,27 +16,44 @@
 
 <body>
     <header class="_top_section">
-        <img class="_top_section_logo" src="images/logo-bookmark.svg" alt="logo">
-        <nav class="_nav_bar">
+        <div id="overlay" onclick="off()">
+            <div class="_close">
+                <img class="_close_icon" src="images/icon-close.svg" alt="">
+            </div>
+            <div class="_burger_menu_down">
+                <ul>
+                    <li><a href="">FEATURES</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="_dropdown_social_media">
+                <img class="_icons" src="images/icon-facebook.svg" alt="facebook">
+                <img class="_icons" src="images/icon-twitter.svg" alt="twitter">
+            </div>
+        </div>
+        <img class="_top_section_logo" id="_nav_bar_logo" src="images/logo-bookmark.svg" alt="logo">
+        <nav class="_nav_bar" id="_nav_bar_id">
             <ul>
                 <li><a href="">FEATURES</a></li>
                 <li><a href="">PRICING</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
         </nav>
-        <a href="#"><button class="_nav_bar_bttn">LOGIN</button></a>
-        <div class="_burger_menu">
-            <img class="_burger_menu_img" src="images/icon-hamburger.svg" alt="burger_menu">
+        <button class="_nav_bar_bttn">LOGIN</button>
+        <div class="_burger_menu" onclick="on()">
+            <img class="_burger_menu_img" id="_nav_bar_hamb" src="images/icon-hamburger.svg" alt="burger_menu">
         </div>
     </header>
-
-
     <footer>
         <p class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             Coded by <a href="# ">Tomas Hernandez</a>.
         </p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -18,6 +18,17 @@ button {
     cursor: pointer;
 }
 
+h3 {
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -69,11 +80,10 @@ button {
 ._nav_bar_bttn:hover {
     background-color: transparent;
     transition: 0.9s;
-
-
     border-color: hsl(229, 8%, 60%);
     color: hsl(229, 8%, 60%);
 }
+
 
 @media only screen and (min-width:800px) {
 
@@ -99,18 +109,21 @@ button {
 
     ._close {
         padding: 3% 10%;
-        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     ._close_icon {
         cursor: pointer;
+        height: 20px;
     }
 
     ._burger_menu_down {
         position: absolute;
         list-style: none;
         text-align: center;
-        height:80%;
+        height: 80%;
         width: 100%;
         margin-top: 50%;
     }
@@ -135,10 +148,10 @@ button {
     ._icons {
         align-self: center;
         margin-right: 10px;
+        margin-bottom: 5px;
     }
 
     #overlay {
-        transition: 1s ease;
         position: fixed;
         display: none;
         flex-direction: column;
@@ -148,7 +161,7 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(37, 43, 70, 0.95);
+        background-color: rgba(37, 43, 70, 0.85);
         z-index: 2;
 
     }

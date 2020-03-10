@@ -11,15 +11,21 @@ html {
 
 
 button {
-    padding: 1% 4%;
+    padding: 3% 5%;
     border-radius: 5px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     border-width: .5px;
     cursor: pointer;
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
 h3 {
     color: white;
+    font-weight: 400;
 }
 
 footer {
@@ -27,6 +33,14 @@ footer {
     bottom: 0px;
     width: 100%;
     margin-bottom: 5px;
+}
+
+._descrip {
+    word-wrap: break-word;
+    width: 80%;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .attribution {
@@ -43,6 +57,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 3% 10%;
+    margin-bottom: 200px;
 }
 
 ._top_section_logo {
@@ -73,6 +88,7 @@ footer {
 }
 
 ._nav_bar_bttn {
+    padding: 1% 5%;
     background-color: hsl(0, 94%, 66%);
     color: white;
 }
@@ -84,10 +100,47 @@ footer {
     color: hsl(229, 8%, 60%);
 }
 
+._first_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10%;
+}
+
+._left_side_fs {
+    width: 50%;
+}
+
+._first_section_btn {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    margin-right: 10px;
+}
+
+._first_section_btn_dos {
+    background-color: whitesmoke;
+    color: black;
+}
+
+._right_side_fs_img {
+    margin-right: -13%;
+    width: 50%;
+    background-color: hsl(231, 69%, 60%);
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+}
+
+._hero {
+    max-width: 100%;
+    height: auto;
+    margin-left: -80px;
+    margin-top: -80px;
+}
 
 @media only screen and (min-width:800px) {
 
-    ._burger_menu {
+    ._burger_menu,
+    ._burger_menu_down {
         display: none;
     }
 
@@ -102,6 +155,8 @@ footer {
     ._nav_bar {
         display: none;
     }
+
+    /* Burger Menu Items  */
 
     ._burger_menu_img {
         cursor: pointer;
@@ -130,12 +185,20 @@ footer {
 
     ._burger_menu_down li {
         margin-bottom: 30px;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        padding: 2% 2%;
+        margin-right: 40px;
+        margin-left: 40px;
+        list-style: none;
     }
 
     ._burger_menu_down li a {
         text-decoration: none;
         font-size: 20px;
         color: white;
+        font-weight: 400;
     }
 
     ._dropdown_social_media {
@@ -147,8 +210,8 @@ footer {
 
     ._icons {
         align-self: center;
-        margin-right: 10px;
-        margin-bottom: 5px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     #overlay {
@@ -163,6 +226,29 @@ footer {
         bottom: 0;
         background-color: rgba(37, 43, 70, 0.85);
         z-index: 2;
-
     }
+
+    /* Hero Section Items */
+
+    ._first_section {
+        padding: 1%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    ._descrip {
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    ._left_side_fs{
+        width: 100%;
+    }
+
+    ._right_side_fs_img{
+        width: 100%;
+    }
+
 }
